@@ -1,0 +1,589 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*****                        DEBUT                             *****/
+html
+{
+overflow-x: hidden
+} 
+
+#container{
+    margin-left:auto;
+    margin-right: auto;
+    background:rgb(213,208,205);
+}
+
+/*****                        HEADER/NAV                            *****/
+
+/*.logo{
+    margin-left:300px;
+    margin-right:10px;
+}*/
+
+.leCollapseFerme{
+    font-family: sans-serif;
+    font-size:30px;
+    display: none;
+}
+
+.slogan{
+    margin-top:10px;
+    margin-left:200px;
+    text-decoration: none;
+    font-family:'Comfortaa';
+    font-size: 22px;
+    color:white;
+}
+
+.versLeHaut{
+    display:flex;
+    justify-content:end;
+    width:85%;
+    margin-right:30px;
+    margin-left:auto;
+ }
+ 
+ .versLeHaut div{
+     width:45px;
+     height:40px;
+     padding:2px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     position:fixed;
+     bottom : 10px;
+     right: -100px;
+     opacity: 0.8;
+ }
+ 
+
+.ombre{
+    text-shadow: 2px 2px 2px gray;
+    font-size: 27px;
+}
+
+.slogan:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.web{
+    font-family: 'Lobster';
+    color:rgb(99, 134,146);
+}
+
+.liens{
+    width:500px;
+    height:70px;
+    margin-left:250px;
+    display:flex;
+    align-items:center;
+}
+
+.lienNav{
+    margin:25px;
+    text-decoration:none;
+    color:white;
+    font-family:'Comfortaa';
+    font-weight: 350px;
+}
+
+#lienNav1{
+    text-shadow:4px 4px 4px gray;
+}
+
+#lienNav22{
+    text-shadow:4px 4px 4px rgb(230, 69, 96);
+}
+
+.lienNav span{
+    visibility: hidden;
+}
+
+.lienNav:hover{
+    text-decoration:none;
+    color:white;
+}
+ 
+
+/*****                          HOME                       *****/
+
+#home{
+    display: flex;
+    flex-direction: row;
+}
+
+.bonjour{
+    font-size:85px;
+    font-family:'Nunito', sans-serif;
+    text-align: center;
+}
+
+.bonjour span{
+    font-size: 150px;
+    text-shadow: 5px 5px 5px gray;
+}
+
+.presentation{
+    font-size: 38px;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+.homeGauche{
+    height:700px;
+    overflow:hidden;
+}
+
+.frontBack{
+    position: absolute;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Staatliches', sans-serif;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 18%;
+    color: rgba(255,255,255,0.5);
+}
+
+.homeDroite{
+    height: 700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(27,34,40);
+    transition: 0.5s;    
+}
+
+.prenomNom{
+    font-weight: bold;
+    color:rgb(230, 69, 96);
+}
+
+.dev{
+    font-weight: bold;
+    color:rgb(62, 192, 62);
+}
+
+.tech{
+    font-weight: bold;
+    color:rgb(44, 175, 236);
+}
+
+/*****                      SEPARATION                *****/
+.bloc1{   
+    height: 10px;
+    background:rgb(56, 56, 77);
+    box-shadow: 5px 5px 5px gray;
+}
+
+.bloc2{   
+    height:50px;
+}
+
+.bloc3{   
+    overflow:hidden;
+}
+
+/*****                      REALISATIONS              *****/
+
+.intro{
+    margin-left: 50px;
+}
+
+.titre{
+    font-family: 'Lobster';
+    font-size:50px;
+    color:rgb(99, 134,146);
+    margin-bottom:25px;
+}
+
+.intro p{
+    font-family:'Comfortaa';
+    margin-bottom:50px;
+    color: rgb(51,66,71);
+    font-size:30px;
+}
+
+/*****                       PARCOURS                 *****/
+#parcours{ 
+    height:500px;
+}
+
+.parcoursSuite{
+    margin-left: 50px;
+}
+
+.blocTag{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.blocTag a button:hover{
+    color:rgb(51,66,71);
+}
+
+.tag{
+    display:inline-block;
+    border-radius: 30px;
+    padding:5px;
+    margin: 0 15px 15px 0;
+    font-family:'Comfortaa';
+    color: rgb(51,66,71);
+}
+
+.tagGreen{
+    border:1px solid rgb(62, 192, 62);
+    background:rgba(62, 192, 62,0.5);
+}
+
+.tagPink{
+    border:1px solid rgb(230,69,96);
+    background:rgba(230,69,96,0.6);
+}
+
+.tagBlue{
+    border:1px solid rgb(44,175,236);
+    background:rgba(44,175,236,0.6);
+}
+
+.cmptOutils{
+    list-style-type: circle;
+    font-size: 18px;
+    color: rgb(51,66,71);
+    font-family:'Nunito';
+}
+
+.annees{
+    display:flex;
+    flex-direction: row;
+}
+.annees span{
+    font-family:'Comfortaa';
+    margin-bottom:25px;
+    margin-right:60px;
+    margin-left:60px;
+    color: rgb(51,66,71);
+    font-size:25px;
+}
+
+.annees span:hover{
+    color:rgba(62, 192, 62,0.8);
+    text-shadow:4px 4px 4px rgba(62, 192, 62,0.5);
+    cursor:pointer;
+}
+
+#wf3{
+    color:rgba(62, 192, 62,0.8);
+    text-shadow:4px 4px 4px rgba(62, 192, 62,0.5);
+}
+
+#annee1319{
+    display: none;
+}
+
+#annee12{
+    display: none;
+}
+
+#annee0912{
+    display: none;
+}
+
+#cakeImg{
+    display: none;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+#computerImg{
+    display: none;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+#hatImg{
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.centreParc{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 25px;
+} 
+
+.txtParc{
+    color: rgb(51,66,71);
+    font-family:'Nunito';
+    font-size:25px;
+}
+
+.txtParc h1{
+    margin-bottom:25px;
+    font-weight: bold;
+}
+
+.txtParc ul{
+    width:300px;
+}
+
+.txtParc li{
+    list-style-type: circle;
+    font-size: 18px;
+}
+
+.telechargerCv{
+    width:300px;
+}
+
+.imgParc{
+    display:flex;
+    justify-content: center;
+}
+
+/*****                       CONTACT                  *****/
+/* Page de contact (background) */
+.contactBox{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Contenaire du formulaire de contact */
+.formContact{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 30px;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+.formContact div:first-child{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* The Close Button */
+#close{
+    color: #aaa;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+    color:rgb(247, 108, 108);
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.btn{
+    font-family:'Comfortaa';
+}
+
+/*****                       FOOTER                   *****/
+
+footer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#basDePage{ 
+    display:flex;
+    height:200px;
+    justify-content: space-around;
+   
+}
+
+.copyRight{
+    display:flex;
+    justify-content: center;   
+    height: 25px;
+    color:white;
+    font-family: sans-serif;
+    font-size: 12px;
+    background:rgb(34,42,50);  
+}
+
+.copyRight p{
+    margin-top:5px;
+}
+
+.titreBasDePage{
+    color: rgb(51,66,71);
+    font-family:'Nunito';
+    font-size:25px;
+    font-weight: bold;
+}
+
+.txtBasDePage{
+    margin-top:30px;
+}
+
+.liBDP li{
+    margin-bottom: 5px;
+}
+
+.liBDP li a{
+    text-decoration: none;
+    color:rgb(51,66,71);
+    font-size:18px;
+    font-family: sans-serif;
+}
+
+.liBDP li a:hover{
+    text-decoration: none;
+    color:rgb(99, 134,146);
+}
+
+/*****                         RESPONSIVE                  *****/
+
+@media screen and (min-width: 360px) {
+    .slogan { 
+      margin-left:55px;
+      margin-bottom: 10px;
+    }
+    .lienNav{
+        display: inline-block;
+        padding: 7px;
+    }
+    #lienNav2{
+        text-shadow:4px 4px 4px rgb(160, 76, 90);
+    }
+    #lienNav3{
+        text-shadow:4px 4px 4px rgb(62, 192, 62);
+    }
+    .lienNav4{
+        text-shadow:4px 4px 4px rgb(44,175,236);
+    }
+    .presentation{
+        font-size: 28px;
+    }
+    .bonjour{
+        font-size: 60px;
+    }
+    .bonjour span{
+        font-size: 100px;
+    }
+    #parcours{
+        height:700px;
+    }
+    .annees{
+       display:flex;
+       flex-direction: column;
+    }
+    .annees span{
+        margin-left:0px;
+    }
+    .formContact{
+        width:360px;
+        margin-top:220px;
+        margin-bottom: auto;
+        margin-left:0px;
+    }
+    #close{
+        top:220px;
+        right:1020px;
+    }
+  }
+@media screen and (min-width: 1200px) {
+    .slogan { 
+      margin-left:200px;
+      margin-bottom: 0px;
+    }
+    .presentation{
+        font-size: 38px;
+    }
+    .bonjour{
+        font-size: 100px;
+    }
+    .bonjour span{
+        font-size: 150px;
+    }
+    #parcours{
+        height:500px;
+    }
+    .annees{
+        display:flex;
+        flex-direction: row;
+        justify-content: center; 
+     }
+     .annees span{
+        margin-left:60px;
+    } 
+    .formContact{
+        width:40%;
+        margin:15% auto;
+    }
+    #close{
+        top:50px;
+        right:50px;
+    }
+    #lienNav2{
+        text-shadow:0px 0px 0px white
+    }
+    #lienNav3{
+        text-shadow:0px 0px 0px white
+    }
+    .contact{
+        text-shadow:0px 0px 0px white    
+    }
+  }

@@ -1,0 +1,62 @@
+/*****     CAROUSEL     *****/
+
+.blocCarrousel{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#carrousel{
+    width:320px;
+    height:240px;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px rgb(230, 69, 96,0.8);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.controls{
+    width:100px;
+    height: 100px;;
+   /* opacity: 0.8;*/
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 38px;
+    color:rgb(99, 134,146);
+    font-family: 'Comfortaa';
+}
+
+.controls:hover,
+.controls:focus {
+    cursor: pointer;
+    opacity: 0.5;
+    color:rgb(230, 69, 96);
+}
+
+.btnActive{
+    width:400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.roundBtn{
+    background:rgb(44, 175, 236);
+    border: none;
+    padding: 8px;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius:50%;
+}
+
+.active,.roundBtn:hover{
+    background-color: rgb(230,69,96,0.8) ;
+    text-decoration: none;
+}
